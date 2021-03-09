@@ -18,7 +18,7 @@ An employee directory made with React using data from the Random User API.
 - npm start
 
 ## Deployed Site
-
+https://esober101.github.io/employee-directory/
 
 ## Screenshot
 ![Screenshot](public/screenshot.jpg "Screenshot")
