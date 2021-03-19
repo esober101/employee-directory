@@ -26,31 +26,6 @@ class Search extends Component {
         this.setState({ filteredEmployees: filteredList })
     }
 
-    sortAscending = () => {
-        const { filteredEmployees } = this.state;
-        filteredEmployees.sort((a, b) => a - b)
-        this.setState({ filteredEmployees })
-    }
-    sortDescending = () => {
-        const { filteredEmployees } = this.state;
-        filteredEmployees.sort((a, b) => a - b).reverse()
-        this.setState({ filteredEmployees })
-    }
-    
-    handleSort = () => {
-        if (this.state.order === "descending") {
-            this.setState({ order: "ascending" })
-            const { filteredEmployees } = this.state;
-            filteredEmployees.sort((a, b) => a - b)
-            this.setState({ filteredEmployees })
-        } else {
-            this.setState({ order: "descending" })
-            const { filteredEmployees } = this.state;
-            filteredEmployees.sort((a, b) => b - a).reverse();
-            this.setState({ filteredEmployees })
-        }
-        console.log(this.state.order);
-    }
 
     render() {
         return (
